@@ -5,14 +5,18 @@ import styles from './Navbar.module.css'
 import TextField from '@mui/material/TextField';
 import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className={`flex justify-between pt-8 pb-5 px-10 ${styles.navbar}`}>
+    <div className={`flex justify-between pt-5 pb-5 px-10 ${styles.navbar}`}>
       <div className='flex  items-center'>
-        <h1 className='text-[30px] font-bold'>
-          Classy Cars
-        </h1>
+        <Link href='/'>
+          <h1 className='text-[30px] font-bold'>
+            Classy Cars
+          </h1>
+        </Link>
+
         <TextField id="outlined-basic" placeholder='Search in classy cars' type='search' variant="outlined"
           InputProps={{
             startAdornment: (

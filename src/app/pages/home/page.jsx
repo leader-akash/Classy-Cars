@@ -4,9 +4,11 @@ import Footer from '@/app/components/footer/Footer'
 import Navbar from '@/app/components/navbar/Navbar'
 import React from 'react'
 import carsType from '../../../../RentalCarData.json'
+import Link from 'next/link'
 
 
 const Homepage = () => {
+    
     return (
         <div>
             <Navbar />
@@ -18,9 +20,9 @@ const Homepage = () => {
                     {
                         carsType?.slice(0, 10)?.map((car, index) => {
                             return (
-                                <div key={index}>
+                                <Link href={'/pages/car-details'} key={index} >
                                     <Card data={car} />
-                                </div>
+                                </Link>
                             )
                         })
                     }
