@@ -47,13 +47,13 @@ const Footer = () => {
             <div>
                 <h2 className='text-[18px] font-semibold'>Contact Us</h2>
                 <ul className='text-[13px] text-lightGrey'>
-                    <li className='flex items-center py-1'><span className='text-white font-bold mx-2'><PinDropIcon className='text-[18px] ' />  Location: </span> Ludhiana, Punjab 14000 </li>
-                    <li className='flex items-center py-1'><span className='text-white font-bold mx-2'><CallIcon className='text-[18px] ' />Call Us: </span>
-                        +91 0000 000000
+                    <li className='flex items-center py-1'><span className='text-white font-bold -ml-0.5'><PinDropIcon className='text-[18px]' />Location: </span> <span className='mx-1'>Ludhiana, Punjab 14000 </span></li>
+                    <li className='flex items-center py-1'><span className='text-white font-bold '><CallIcon className='text-[18px] '/>Call Us: </span>
+                      <span className='mx-1'>+91 0000 000000</span>  
                     </li>
-                    <li className='flex items-center py-1 cursor-pointer'><span className='text-white font-bold mx-2'><EmailIcon className='text-[18px] mr-1' />Email: </span>
+                    <li className='flex items-center py-1 cursor-pointer'><span className='text-white font-bold'><EmailIcon className='text-[18px] mr-1' />Email: </span>
                         <Link href='mailto:leader.akashak@gmail.com'>
-                            leader.akashak@gmail.com
+                            <span className='mx-1'>leader.akashak@gmail.com</span>
                         </Link>
                     </li>
                 </ul>

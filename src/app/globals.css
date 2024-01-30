@@ -31,3 +31,7 @@
 .card-border:hover{
   border: solid 1px black;
 }
+
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root{
+  border-radius: 50px !important;
+}
