@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --box-shadow: 0 4px 4px 0 #00000033,0 4px 10px 0 #00000030;
+}
+
+.app-container{
+  /* width: 80%; */
+  margin: auto
+}
+
+.car-bg{
+  border-radius: 200px 0 0 100px  ;
+}
+
+.custom-shadow{
+  box-shadow: var(--box-shadow)
+}
+
+.card-border{
+  border: solid 1px transparent;
+}
+
+.card-border:hover{
+  border: solid 1px black;
+}

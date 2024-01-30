@@ -1,0 +1,14 @@
+/* Banner.module.css */
+.banner {
+    padding: 20px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .imageContainer {
+    position: relative;
+    overflow: hidden;
+  }
+  
