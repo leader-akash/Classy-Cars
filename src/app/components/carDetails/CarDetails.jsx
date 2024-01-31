@@ -17,8 +17,8 @@ const CarDetails = () => {
 
                 <div className='mx-5 my-5'>
                     <h2 className='text-[30px] font-semibold'>Car name</h2>
-
-                    <p className='my-5 text-[20px]'>NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the race track</p>
+                    
+                    <p className='my-5 text-[20px]'>Classy cars has become the most famous brand inspired by the most unforgiving proving ground the race track</p>
 
                     <div className='flex justify-between items-center'>
                         <p className='my-5 text-[20px] font-semibold'>₹ 50/hour</p>
