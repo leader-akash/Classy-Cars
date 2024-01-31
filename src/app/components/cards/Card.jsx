@@ -35,10 +35,10 @@ const Card = ({ data }) => {
               <FavoriteIcon className=' absolute top-3 right-4 cursor-pointer text-[26px] text-red' onClick={(e) => handleWishlist(e)} />
           }
         </div>
-        <p className='ml-5 font-semibold'>₹ {data?.rental_price}/hour</p>
+        <p className='ml-5 font-semibold'>₹ {data?.rental_price}/day</p>
         <Image src={bmw} width={250} height={140} alt='car' />
         <div className='text-center'>
-          <Button variant="contained" className='rounded-full bg-blue font-bold mt-6 text-[14px] '>View more</Button>
+          <Button variant="contained" className='bg-blue font-bold mt-6 text-[14px] '>View more</Button>
         </div>
       </div>
 

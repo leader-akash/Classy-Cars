@@ -3,7 +3,7 @@ import CarDetails from '../../components/carDetails/CarDetails'
 
 const CarDetail = () => {
   return (
-    <div>
+    <div className='m-5'>
         <CarDetails />
     </div>
   )

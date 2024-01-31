@@ -25,11 +25,11 @@ const Navbar = () => {
               </InputAdornment>
             ),
           }}
-          className={`w-[30vw] ml-32 `}
+          className={`w-[30vw] searchbar `}
         />
 
       </div>
-      <Button variant="outlined" className='rounded-full font-bold text-blue-500 px-6 text-[16px] '>Sign in</Button>
+      <Button variant="outlined" className='font-bold text-blue-500  text-[16px] '>Sign in</Button>
     </div>
   )
 }
