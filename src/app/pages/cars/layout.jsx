@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import Navbar from "../../components/navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar"
+import Footer from "../../components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +17,16 @@ export default function CarsPage({ children }) {
                     <Navbar />
                 </header>
                 <div className="flex">
-                <div>
-                   {/*<Sidebar /> */}
+                <div >
+                 <Sidebar /> 
                 </div>
-                    {children}
+                <div className="mt-5">
+                {children}
+                </div>  
+                </div>
+
+                <div>
+                <Footer />
                 </div>
             </body>
         </html>

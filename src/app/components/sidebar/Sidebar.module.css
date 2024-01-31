@@ -1,0 +1,34 @@
+.sidebarContainer{
+    background-color: #FFFFFF;
+    height: 100%;
+    border-right: solid 1px #e3e3e3c7;
+    padding: 1rem;
+}
+
+.carTypeContainer{
+    width: 250px;
+    border: solid 0.5px #e3e3e3c7;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+}
+
+.typeContainer{
+    border: solid 1px #e3e3e3c7;
+    margin: 10px;
+    padding: 6px 0 6px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.selectedType{
+    background-color: #e3e3e3c7;
+}
+
+.clearFilterBtn{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fed7d7d1;
+    color: #fd4e4e;
+    border-radius: 20px;
+    margin-right: 12px;
+}
