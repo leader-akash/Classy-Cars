@@ -1,0 +1,11 @@
+.carouselIndicator {
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    border: none; /* No border by default */
+  }
+  
+  /* Border style for selected indicator */
+ .selected {
+    border: 2px solid #fff;
+  }
