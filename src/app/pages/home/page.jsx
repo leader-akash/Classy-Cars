@@ -1,14 +1,14 @@
-import Banner from '@/app/components/banner/Banner'
-import Card from '@/app/components/cards/Card'
-import Footer from '@/app/components/footer/Footer'
-import Navbar from '@/app/components/navbar/Navbar'
 import React from 'react'
 import carsType from '../../../../RentalCarData.json'
 import Link from 'next/link'
+import Banner from '../../components/banner/Banner'
+import Navbar from '../../components/navbar/Navbar'
+import Footer from '../../components/footer/Footer'
+import Card from '../../components/cards/Card'
 
 
 const Homepage = () => {
-    
+
     return (
         <div>
             <Navbar />
