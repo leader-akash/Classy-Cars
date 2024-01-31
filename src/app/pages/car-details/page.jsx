@@ -1,5 +1,5 @@
-import CarDetails from '@/app/components/carDetails/CarDetails'
 import React from 'react'
+import CarDetails from '../../components/carDetails/CarDetails'
 
 const CarDetail = () => {
   return (
