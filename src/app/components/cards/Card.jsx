@@ -11,7 +11,7 @@ const Card = ({ data }) => {
   const [wishlistStates, setWishlistStates] = useState(false);
 
   return (
-    <div className='flex flex-wrap  justify-between mr-5 mb-10'>
+    <div className='flex flex-wrap  justify-between mr-5 mb-10 cursor-pointer'>
       
             <div className={`w-[260px] h-[300px] bg-indigo-100 rounded-xl mt-10 custom-shadow card-border`}>
               <div className='flex justify-between items-center mx-4 my-2'>
