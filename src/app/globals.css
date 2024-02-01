@@ -9,6 +9,7 @@
 
 :root{
   --box-shadow: 0 4px 4px 0 #00000033,0 4px 10px 0 #00000030;
+  --border-color: #e3e3e3c7
 }
 
 .app-container{
@@ -38,4 +39,13 @@
 
 .searchbar{
   margin-left: 5rem;
+}
+
+.carousel{
+  height: 400px !important;
+}
+
+.detail-container{
+  border: solid 2px var(--border-color);
+  border-radius: 10px;
 }

@@ -10,21 +10,12 @@ const CarDetails = () => {
     return (
         <div>
             <h2 className='text-[35px]'>Car Details</h2>
-            <div className='flex border mx-10'>
-                {/*<div className='flex flex-col ml-5 my-5  rounded-xl'>
-                    <div className='w-[500px] h-[380px]'>
-                        <Image src={carBg} alt='car-image' className='w-[500px] h-[380px] rounded-xl' />
-                    </div>
-                    <div className='flex flex-row'>
-                        <Image src={car} alt='car-images' className='w-[150px] h-[100px] rounded-xl ' />
-                        <Image src={car} alt='car-images' className='w-[150px] h-[100px] rounded-xl' />
-                        <Image src={car} alt='car-images' className='w-[150px] h-[100px] rounded-xl' />
+            <div className='flex detail-container mx-10'>
 
-                    </div>
+            <div className='m-5 '>
+
+                    <CarImageSlider />
                 </div>
-    */}
-
-    <CarImageSlider />
 
                 <div className='mx-5 my-5'>
                     <h2 className='text-[30px] font-semibold'>Car name</h2>
