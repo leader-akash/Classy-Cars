@@ -9,7 +9,7 @@ import XIcon from '@mui/icons-material/X';
 
 const Footer = () => {
     return (
-        <div className='bg-black text-white w-[100%] p-3 mt-10 flex justify-between px-10 py-5'>
+        <div className='bg-black text-white w-[100%] p-3  flex justify-between px-10 py-5'>
 
             <div>
                 <p className='text-[25px] font-semibold'>Classy Cars</p>

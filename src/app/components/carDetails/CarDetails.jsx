@@ -5,6 +5,7 @@ import Button from '@mui/material/Button';
 import carBg from '../../Assets/caa.jpg'
 import car from '../../Assets/hero.webp'
 import CarImageSlider from '../carImagesSlider/CarImageSlider'
+import Link from 'next/link';
 
 const CarDetails = () => {
     return (
@@ -25,7 +26,9 @@ const CarDetails = () => {
                     <div className='flex justify-between items-center'>
                         <p className='my-5 text-[20px] font-semibold'>₹ 50/hour</p>
 
-                        <Button variant="contained" className='bg-blue font-bold mt-6 text-[14px] '>Book now</Button>
+                        <Link href={'/pages/booking'}>
+                            <Button variant="contained" className='bg-blue font-bold mt-6 text-[14px] '>Book now</Button>
+                        </Link>
                     </div>
                 </div>
 

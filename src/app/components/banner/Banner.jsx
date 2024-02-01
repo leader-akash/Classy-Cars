@@ -15,7 +15,9 @@ const Banner = () => {
                 </div>
                 <p className='text-[2vw] xl:text-[25px] mt-5'>Streamline your car rental experience with our effortless booking process.</p>
                 <Link href={'/pages/cars'}>
-                <Button variant="contained" className='bg-blue explore-btn'>Explore Cars</Button>
+                <div className='explore-btn'>
+                    <Button variant="contained" className='bg-blue'>Explore Cars</Button>
+                </div>
                 </Link>
 
             </div>
