@@ -7,5 +7,9 @@
   
   /* Border style for selected indicator */
  .selected {
-    border: 2px solid #fff;
+    border: 2px solid #ec2e2e;
+  }
+
+  .carouselContainer{
+    height: 410px !important;
   }
