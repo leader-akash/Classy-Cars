@@ -13,3 +13,7 @@
   .carouselContainer{
     height: 410px !important;
   }
+
+  .imageItems{
+    border-radius: 10px !important;
+  }

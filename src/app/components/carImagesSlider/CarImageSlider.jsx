@@ -24,7 +24,7 @@ const CarImageSlider = () => {
                 onClick={clickHandler}
                 key={index}
             >
-                <Image src={images[index]} alt={`indicator-${index + 1}`} width={50} height={50} />
+                <Image src={images[index]} alt={`indicator-${index + 1}`} width={50} height={50} className={`${styles.imageItems}`}/>
             </li>
         );
     };
