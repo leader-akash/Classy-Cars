@@ -16,7 +16,7 @@ export default function Booking({ children }) {
                 <header>
                     <Navbar />
                 </header>
-                <div className="h-[100vh]">
+                <div className="mb-5">
                     {children}
                 </div>
                 <div>
