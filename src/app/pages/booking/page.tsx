@@ -12,6 +12,7 @@ import car from "../../Assets/bmw.png";
 const Booking = () => {
 
   const indianLocations = [
+    { city: 'Select your city' },
     { city: 'Ambala' },
     { city: 'Amritsar' },
     { city: 'Bangalore' },
@@ -133,7 +134,7 @@ const Booking = () => {
                           {
                             indianLocations.map((el, i) => {
                               return (
-                                  <option>{el.city}</option>
+                                  <option  key={i}>{el.city}</option>
                               )
                             })
                           }
@@ -181,7 +182,7 @@ const Booking = () => {
                         {
                             indianLocations.map((el, i) => {
                               return (
-                                  <option>{el.city}</option>
+                                  <option  key={i}>{el.city}</option>
                               )
                             })
                           }
