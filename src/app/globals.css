@@ -49,3 +49,15 @@
   border: solid 2px var(--border-color);
   border-radius: 10px;
 }
+
+.select-component{
+  padding: 15px 12px;
+}
+
+.form-container{
+  border-radius: 10px !important;
+}
+
+.total-price{
+  border-top: solid 1px var(--border-color);
+}
