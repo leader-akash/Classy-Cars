@@ -7,8 +7,11 @@ import SearchIcon from '@mui/icons-material/Search';
 import InputAdornment from '@mui/material/InputAdornment';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import IconButton from '@mui/material/IconButton';
+import SellIcon from '@mui/icons-material/Sell';
 import Tooltip from '@mui/material/Tooltip';
 import Link from 'next/link';
+import carIcon from '../../Assets/sedan-car-model.png'
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -34,15 +37,36 @@ const Navbar = () => {
         </div>
       </div>
       <div className='flex items-center justify-between'>
-        <p className='mr-8  '>
-          <Tooltip title='Favourites'>
-            <Link href={'/pages/favourites'}>
+        <p className='mr-8  -mt-2 flex flex-col items-center text-black'>
+          <Tooltip title='Cars'>
+            <Link href={'/pages/cars'}>
               <IconButton>
-                <FavoriteIcon className='text-[28px] cursor-pointer ' />
+                <Image src={carIcon} alt='car-icon' width={40} height={40} />
               </IconButton>
             </Link>
           </Tooltip>
+          <p className='text-[16px] -mt-2 text-navbar-buttons'>Cars</p>
         </p>
+        <p className='mr-8  flex flex-col items-center text-black'>
+          <Tooltip title='Favourites'>
+            <Link href={'/pages/cars'}>
+              <IconButton>
+                <FavoriteIcon color='' className='text-[26px] cursor-pointer ' />
+              </IconButton>
+            </Link>
+          </Tooltip>
+          <p className='text-[13px]-mt-3 text-navbar-buttons'>Favourites</p>
+        </p>
+        {/*<p className='mr-8  flex flex-col items-center text-black'>
+          <Tooltip title='Favourites'>
+            <Link href={'/pages/cars'}>
+              <IconButton>
+                <SellIcon color='' className='text-[26px] cursor-pointer ' />
+              </IconButton>
+            </Link>
+          </Tooltip>
+          <p className='text-[13px] -mt-1 text-navbar-buttons'>Cart</p>
+          </p> */}
         <Button variant="outlined" className='font-bold text-blue-500  text-[16px] '>Sign in</Button>
       </div>
     </div>

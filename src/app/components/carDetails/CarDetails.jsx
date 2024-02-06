@@ -2,12 +2,11 @@
 import Image from 'next/image'
 import React from 'react'
 import Button from '@mui/material/Button';
-import carBg from '../../Assets/caa.jpg'
-import car from '../../Assets/hero.webp'
 import CarImageSlider from '../carImagesSlider/CarImageSlider'
 import Link from 'next/link';
 
 const CarDetails = () => {
+
     return (
         <div>
             <h2 className='text-[35px]'>Car Details</h2>
