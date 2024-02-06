@@ -29,12 +29,6 @@ const Booking = () => {
     { city: 'Ludhiana' },
     { city: 'Noida' }
   ];
-  
-  console.log(indianLocations);
-  
-  
-  console.log(indianLocations);
-  
 
   return (
     <div>

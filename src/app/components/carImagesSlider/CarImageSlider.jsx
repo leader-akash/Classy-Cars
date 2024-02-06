@@ -14,7 +14,7 @@ const CarImageSlider = () => {
 
     const renderCustomIndicator = (clickHandler, isSelected, index) => {
         const images = [
-            caa, bmw, caa, bmw, bmw,caa
+            car ,caa, bmw, caa, bmw,caa
         ];
         const indicatorClassName = isSelected ? `${styles.carouselIndicator} ${styles.selected}` : `${styles.carouselIndicator}`;
 
@@ -31,19 +31,19 @@ const CarImageSlider = () => {
 
     return (
         <div className='w-[500px] h-[410px]'>
-            <Carousel style={{ height: '100%' }} showArrows={true} infiniteLoop={true} autoPlay={true} interval={3000} stopOnHover={true} renderIndicator={renderCustomIndicator}>
+            <Carousel style={{ height: '100%' }} showArrows={true} infiniteLoop={true} autoPlay={true} interval={3000} stopOnHover={true} renderIndicator={renderCustomIndicator} showThumbs={false}>
                 <div>
-                    <Image src={caa} alt='car-images' className='w-[250px] h-[300px] rounded-xl' />
+                    <Image src={car} alt='car-images' className='w-[250px] h-[300px] rounded-xl' />
                 </div>
                 <div>2
-                    <Image src={bmw} alt='car-images' className='w-[250px] h-[300px] rounded-xl' /></div>
+                    <Image src={caa} alt='car-images' className='w-[250px] h-[300px] rounded-xl' /></div>
                 <div>
                     <h3>3</h3>
-                    <Image src={caa} alt='car-images' className='w-[250px] h-[300px] rounded-xl' />
+                    <Image src={bmw} alt='car-images' className='w-[250px] h-[300px] rounded-xl' />
                 </div>
                 <div>
                     <h3>4</h3>
-                    <Image src={car} alt='car-images' className='w-[250px] h-[300px] rounded-xl' />
+                    <Image src={caa} alt='car-images' className='w-[250px] h-[300px] rounded-xl' />
                 </div>
                 <div>
                     <h3>5</h3>

@@ -15,7 +15,8 @@ module.exports = {
       'blue': '#1565c0',
       'red': '#ff0000',
       'border-color': '#e3e3e3c7',
-      'placeholder-color': '#9CA3AF'   
+      'placeholder-color': '#9CA3AF',
+      'navbar-buttons': '#626262'   
     },
     extend: {
       backgroundImage: {
