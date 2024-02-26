@@ -6,7 +6,6 @@ import Navbar from '../../components/navbar/Navbar'
 import Footer from '../../components/footer/Footer'
 import Card from '../../components/cards/Card'
 
-
 const Homepage = () => {
 
     return (

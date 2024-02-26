@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '@mui/material/Button';
 import styles from './Navbar.module.css'
 import TextField from '@mui/material/TextField';
@@ -13,7 +13,8 @@ import Link from 'next/link';
 import carIcon from '../../Assets/sedan-car-model.png'
 import Image from 'next/image';
 
-const Navbar = () => {
+const Navbar = ({onSearch}) => {
+
   return (
     <div className={`flex justify-between items-center pt-5 pb-5 px-10 ${styles.navbar}`}>
       <div className='flex  items-center'>
@@ -33,6 +34,7 @@ const Navbar = () => {
               ),
             }}
             className={`w-[30vw]`}
+            onChange={(e) => {onSearch(e.target.value)}}
           />
         </div>
       </div>

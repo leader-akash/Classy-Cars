@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/pages/cars/page.jsx"  ],
+, "src/app/pages/cars/page.jsx", "src/app/pages/random/page.jsx", "src/app/redux/providers.jsx", "src/app/redux/services/users.js", "src/app/redux/services/cars.js", "src/app/redux/store.js"  ],
   "exclude": [
     "node_modules"
   ]
