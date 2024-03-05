@@ -1,20 +1,26 @@
-'use client'
 import React from 'react'
 import Card from '../../components/cards/Card'
 import carsType from '../../../../RentalCarData.json'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
+import axios from 'axios'
+import Link from 'next/link'
 
 
-const Cars = () => {
-    const router = useRouter();
+const Cars = async () => {
+    // const router = useRouter();
 
-    const handleCarDetails = () => {
-        router.push('/pages/car-details')
-    }
+    const result = await axios.get(`http://localhost:5004/api/car/`)
+    console.log('result', result?.data)
+
+    // const handleCarDetails = () => {
+    //     router.push('/pages/car-details')
+    // }
+
+
 
     return (
         <div>
-            <div className='flex flex-wrap justify-center'>
+            {/*<div className='flex flex-wrap justify-center'>
                 {
                     carsType?.map((car, index) => {
                         return (
@@ -25,7 +31,22 @@ const Cars = () => {
                     })
                 }
             </div>
-            
+            */}
+
+            <div className='flex flex-wrap justify-center'>
+                {
+                    result?.data?.map((car, index) => {
+                        return (
+                            <Link href="/pages/car-details">
+                                <div key={index}>
+                                    <Card data={car} />
+                                </div>
+                            </Link>
+                        )
+                    })
+                }
+            </div>
+
         </div>
     )
 }

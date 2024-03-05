@@ -51,7 +51,7 @@ const Navbar = ({onSearch}) => {
         </p>
         <p className='mr-8  flex flex-col items-center text-black'>
           <Tooltip title='Favourites'>
-            <Link href={'/pages/cars'}>
+            <Link href={'/pages/favourites'}>
               <IconButton>
                 <FavoriteIcon color='' className='text-[26px] cursor-pointer ' />
               </IconButton>
