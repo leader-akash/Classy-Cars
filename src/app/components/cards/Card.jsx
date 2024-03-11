@@ -44,9 +44,9 @@ const Card = ({ data }) => {
       </div>
         */}
 
-      <div className={`w-[260px] h-[300px] bg-indigo-100 rounded-xl  custom-shadow card-border`}>
+      <div className={`w-[260px] h-[300px] px-1 bg-indigo-100 rounded-xl  custom-shadow card-border`}>
         <div className=' mx-4 my-2'>
-          <h1 className=' text-[24px] font-semibold mt-2 '>{data?.carName}</h1>
+          <h1 className=' text-[24px] font-semibold mt-2 '>{data?.name}</h1>
           {
             !wishlistStates ?
               <FavoriteBorderIcon className='absolute top-3 right-4 cursor-pointer text-[26px]' onClick={(e) => handleWishlist(e)} />
@@ -55,7 +55,7 @@ const Card = ({ data }) => {
           }
         </div>
         <p className='ml-5 font-semibold'>₹ {data?.rentPerKm}/day</p>
-        <Image src={bmw} width={250} height={140} alt='car' />
+        <Image src={data?.image} className="w-[250px] h-[140px] mt-2 rounded-md" width={250} height={140} alt='car' />
         <div className='text-center'>
           <Button variant="contained" className='bg-blue font-bold mt-6 text-[14px] '>View more</Button>
         </div>

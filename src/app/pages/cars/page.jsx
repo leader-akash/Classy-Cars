@@ -9,14 +9,7 @@ import Link from 'next/link'
 const Cars = async () => {
     // const router = useRouter();
 
-    const result = await axios.get(`http://localhost:5004/api/car/`)
-    console.log('result', result?.data)
-
-    // const handleCarDetails = () => {
-    //     router.push('/pages/car-details')
-    // }
-
-
+    const result = await axios.get(`http://localhost:5004/api/car`)
 
     return (
         <div>
@@ -37,10 +30,8 @@ const Cars = async () => {
                 {
                     result?.data?.map((car, index) => {
                         return (
-                            <Link href="/pages/car-details">
-                                <div key={index}>
+                            <Link href={`/pages/car-details/${car?._id}`} key={index}>
                                     <Card data={car} />
-                                </div>
                             </Link>
                         )
                     })
